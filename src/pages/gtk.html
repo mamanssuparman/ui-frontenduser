@@ -13,9 +13,43 @@
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/dataTables.tailwindcss.min.css">
+  <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+  <script src="/dist/js/jquery.dataTables.min.js"></script>
+  <script src="/dist/js/dataTables.tailwindcss.min.js"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+
   <style>
     .scrollbar-hidden::-webkit-scrollbar {
       display: none;
+    }
+        .dataTables_filter input[type="search"] {
+        background-color: #fafafa; /* Warna latar belakang */
+        color: #020000; /* Warna teks */
+        border: 1px solid #0d1820; /* Warna border */
+    }
+        .dataTables_length select[name="example_length"] {
+        background-color: #fafafa; /* Warna latar belakang */
+        color: #020000; /* Warna teks */
+        border: 1px solid #0d1820; /* Warna border */
+    }
+      .dataTables_paginate a{
+          background-color: #ffffff; /* Warna latar belakang */
+          color: #160606; /* Warna teks */
+          border: 1px solid #070c11; /* Warna border */
+          
+      }
+    #example tr:nth-child(odd) {
+        background-color: #ffffff; /* Warna latar belakang */
+        color: #000000; /* Warna teks */
+    }
+    #example tr:nth-child(even) {
+        background-color: #f4f4f4; /* Warna latar belakang */
+        color: #000000; /* Warna teks */
+    }
+    #example_wrapper .my-2 th{
+        border-right: none; /* Menghilangkan border samping kanan */
+        border-left: none; /* Menghilangkan border samping kiri */
     }
   </style>
 </head>
@@ -220,161 +254,41 @@
   <div class="py-2">
 
   </div>
-  <form action="" class="mb-12 mt-12">
-    <i class="bi bi-search absolute ml-6 mt-2"></i>
-    <input type="text" class="w-full rounded-full border-0 bg-gray-200 pl-12" placeholder="Search guru atau tenaga pendidikan">
-    </form>
   <section >
-    
-
-    <div class="flex flex-wrap rounded-lg justify-center mb-12">
-        <div class="">
-            <div class="p-6 m-8 w-56 bg-gray-200 rounded-xl">
-                <picture class="rounded-lg block">
-                <img src="/dist/images/contohfoto.jpg" class="rounded-xl" />
-                </picture>
-                
-            </div>
-            <p class="text-sm text-gray-600 text text-center">
-                Agus Gandi, M.Pd
-            </p>
-        </div>
-
-        <div class="">
-            <div class="p-6 m-8 w-56 bg-gray-200 rounded-xl">
-                <picture class="rounded-lg block">
-                <img src="/dist/images/contohfoto.jpg" class="rounded-xl" />
-                </picture>
-                
-            </div>
-            <p class="text-sm text-gray-600 text text-center">
-                Agus Gandi, M.Pd
-            </p>
-        </div>
-
-        <div class="">
-            <div class="p-6 m-8 w-56 bg-gray-200 rounded-xl">
-                <picture class="rounded-lg block">
-                <img src="/dist/images/contohfoto.jpg" class="rounded-xl" />
-                </picture>
-                
-            </div>
-            <p class="text-sm text-gray-600 text text-center">
-                Agus Gandi, M.Pd
-            </p>
-        </div>
-
-        <div class="">
-            <div class="p-6 m-8 w-56 bg-gray-200 rounded-xl">
-                <picture class="rounded-lg block">
-                <img src="/dist/images/contohfoto.jpg" class="rounded-xl" />
-                </picture>
-                
-            </div>
-            <p class="text-sm text-gray-600 text text-center">
-                Agus Gandi, M.Pd
-            </p>
-        </div>
-
-        <div class="">
-            <div class="p-6 m-8 w-56 bg-gray-200 rounded-xl">
-                <picture class="rounded-lg block">
-                <img src="/dist/images/contohfoto.jpg" class="rounded-xl" />
-                </picture>
-                
-            </div>
-            <p class="text-sm text-gray-600 text text-center">
-                Agus Gandi, M.Pd
-            </p>
-        </div>
-
-        <div class="">
-            <div class="p-6 m-8 w-56 bg-gray-200 rounded-xl">
-                <picture class="rounded-lg block">
-                <img src="/dist/images/contohfoto.jpg" class="rounded-xl" />
-                </picture>
-                
-            </div>
-            <p class="text-sm text-gray-600 text text-center">
-                Agus Gandi, M.Pd
-            </p>
-        </div>
-
-        <div class="">
-            <div class="p-6 m-8 w-56 bg-gray-200 rounded-xl">
-                <picture class="rounded-lg block">
-                <img src="/dist/images/contohfoto.jpg" class="rounded-xl" />
-                </picture>
-                
-            </div>
-            <p class="text-sm text-gray-600 text text-center">
-                Agus Gandi, M.Pd
-            </p>
-        </div>
-
-        <div class="">
-            <div class="p-6 m-8 w-56 bg-gray-200 rounded-xl">
-                <picture class="rounded-lg block">
-                <img src="/dist/images/contohfoto.jpg" class="rounded-xl" />
-                </picture>
-                
-            </div>
-            <p class="text-sm text-gray-600 text text-center">
-                Agus Gandi, M.Pd
-            </p>
-        </div>
-
-        <div class="">
-            <div class="p-6 m-8 w-56 bg-gray-200 rounded-xl">
-                <picture class="rounded-lg block">
-                <img src="/dist/images/contohfoto.jpg" class="rounded-xl" />
-                </picture>
-                
-            </div>
-            <p class="text-sm text-gray-600 text text-center">
-                Agus Gandi, M.Pd
-            </p>
-        </div>
-
-        <div class="">
-            <div class="p-6 m-8 w-56 bg-gray-200 rounded-xl">
-                <picture class="rounded-lg block">
-                <img src="/dist/images/contohfoto.jpg" class="rounded-xl" />
-                </picture>
-                
-            </div>
-            <p class="text-sm text-gray-600 text text-center">
-                Agus Gandi, M.Pd
-            </p>
-        </div>
-
-        <div class="">
-            <div class="p-6 m-8 w-56 bg-gray-200 rounded-xl">
-                <picture class="rounded-lg block">
-                <img src="/dist/images/contohfoto.jpg" class="rounded-xl" />
-                </picture>
-                
-            </div>
-            <p class="text-sm text-gray-600 text text-center">
-                Agus Gandi, M.Pd
-            </p>
-        </div>
-
-        <div class="">
-            <div class="p-6 m-8 w-56 bg-gray-200 rounded-xl">
-                <picture class="rounded-lg block">
-                <img src="/dist/images/contohfoto.jpg" class="rounded-xl" />
-                </picture>
-                
-            </div>
-            <p class="text-sm text-gray-600 text text-center">
-                Agus Gandi, M.Pd
-            </p>
-        </div>
-
-
-        
+    <div class="flex mb-4 text-2xl">
+      Guru dan Tenaga Kependidikan
     </div>
+    <table id="example" class="min-w-full">
+      <thead class="text-red-600 bg-gray-400 border-t-0">
+          <tr class="text-black border-none">
+              <th >#</th>
+              <th>-</th>
+              <th>NUPTK</th>
+              <th>NIP</th>
+              <th>NAMA</th>
+          </tr>
+      </thead>
+      <tbody>
+          <tr>
+              <td>1</td>
+              <td>
+                  <img src="/dist/images/contohfoto.jpg" class="w-56 rounded-lg shadow-lg"/>
+              </td>
+              <td>9999999999999</td>
+              <td>9999999999999</td>
+              <td> <div class="font-semibold">Agus Gandi, M.Pd.</div></td>
+          </tr>
+          <tr>
+              <td>2</td>
+              <td>
+                  <img src="/dist/images/contohfoto.jpg" class="w-56 rounded-lg shadow-lg"/>
+              </td>
+              <td>9999999999999</td>
+              <td>9999999999999</td>
+              <td> <div class="font-semibold">Agus Gandi, M.Pd.</div></td>
+          </tr>
+      </tbody>
+  </table>
 
     </div>
   </section>
@@ -462,7 +376,9 @@
           Banjar.</strong></span>
     </div>
   </footer>
-
+  <script type="text/javascript">
+    new DataTable('#example');
+  </script>
   <script src="/../../node_modules/flowbite/dist/flowbite.min.js"></script>
 </body>
 
